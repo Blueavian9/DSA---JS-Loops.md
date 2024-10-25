@@ -27,10 +27,10 @@ function findBound(arr, target, isFirst) {
         const mid = Math.floor((left + right) / 2); 
         if (arr[mid] === target) {
             if (isFirst) {
-                if (mid === left) || arr[mid - 1] !== target) return mid;
+                if (mid === left || arr[mid - 1] !== target) return mid;
                 right = mid - 1; 
             } else {
-                if (mid === right right || arr[mid + 1] !== target) return mid; 
+                if (mid === right || arr[mid + 1] !== target) return mid; 
                 left = mid + 1; 
             }
         } else if (arr[mid] < target) left = mid + 1;
@@ -41,3 +41,13 @@ function findBound(arr, target, isFirst) {
 }
 
 // example 3: Find Minimum in Rotated Sorted Array: 
+function findMin(arr) {
+    let left = 0; right = arr.length - 1;
+    while (left < right) {
+        const mid = Math.floor((left + right) / 2); 
+        if (arr[mid] > arr[right]) left = mid + 1;
+        else right = mid; 
+    } 
+    
+    return arr[left];
+}
