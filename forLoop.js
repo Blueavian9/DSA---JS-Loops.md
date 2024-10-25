@@ -7,7 +7,6 @@
 
 
 
-
 /* 2. SUM THE ELEMENTS OF AN ARRAY: */
 // let numbers = [5, 10, 15, 20];
 // let sum = 0;
@@ -22,8 +21,8 @@
 
 
 /* 3. DISPLAY EVEN NUMBERS BETWEEN 1 AND 20: */
-// for (let i = 2; i <= 20; i += 2) {
-// console.log(i);
-// }
+for (let i = 1; i <= 20; i += 2) {
+console.log(i);
+}
 
  
