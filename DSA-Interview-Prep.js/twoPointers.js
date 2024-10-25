@@ -1,5 +1,6 @@
-// Two Pointers:
-//example 1: Two-sum (sorted Array)
+/* TWO POINTERS */
+
+//example 1: Two-sum (sorted Array):
 
 function twoSum(arr, target) {
   let left = 0,
@@ -13,7 +14,7 @@ function twoSum(arr, target) {
   return [];
 }
 
-// example 2: Remove Duplicates from Sorted Array
+// example 2: Remove Duplicates from Sorted Array:
 function removeDuplicates(arr) {
   let left = 0;
   for (let right = 1; right < arr.length; right++) {
@@ -25,7 +26,7 @@ function removeDuplicates(arr) {
   return left + 1;
 }
 
-// example 3: Valid Palindrome
+// example 3: Valid Palindrome:
 
 function isPalindrome(s) {
   let left = 0,
@@ -44,3 +45,4 @@ function isPalindrome(s) {
 function AlphaNumeric(c) {
   return /^[a-z0-9]+$/i.test(c);
 }
+

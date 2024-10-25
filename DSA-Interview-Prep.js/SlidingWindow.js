@@ -1,4 +1,4 @@
-/* 3 Sliding Window EXAMPLES */
+/* SLIDING WINDOW */
 
 /* example 1: Maximum Sum of Subarray of Size K : */
 
@@ -18,8 +18,7 @@ function maxSumSubarray(arr, k) {
   return maxSum;
 }
 
-/* example 2: 
-Longest Substring w/ K Distinct Characters: */
+/* example 2: Longest Substring w/ K Distinct Characters: */
 
 function longestDistinct(s, k) {
   let start = 0,
